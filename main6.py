@@ -12,7 +12,9 @@ class ModelName(str, Enum):
 async def get_model(model_name : ModelName):
     if model_name is ModelName.alexnet:
         return {"Model Name " : model_name}
-    elif model_name is ModelName.resnet:
+    if model_name is ModelName.resnet:
         return {'Model Name ' : model_name}
     else:
         return {'Model name ' : model_name}
+
+   
