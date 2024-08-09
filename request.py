@@ -10,4 +10,5 @@ app = FastAPI()
 @app.post('/user/')
 async def create_data(user_data : UserData):
     return user_data
+
     

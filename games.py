@@ -11,8 +11,8 @@ app = FastAPI()
 @app.get("/games/{game}")
 async def get_game_name(game: GameName):
     if game is GameName.freefire:
-        return {'Message' : 'Wow You Choosen the game {game}' }
+        return {'Message' : 'Wow You Choosen the game Free Fire'}
     elif game is GameName.pubg:
-        return {'Message' : 'Wow You Choosen the game {game}' }
+        return {'Message' : 'Wow You Choosen the game PubG' }
     else:
-        return {'Message' : 'Wow You Choosen the game {game}' }
+        return {'Message' : 'Wow You Choosen the game Call Of Duty' }
